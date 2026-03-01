@@ -1,5 +1,5 @@
 # This is workflow name
-name: Hello
+name: CICD
 
 # runs on a trigger
 on:
@@ -30,7 +30,7 @@ jobs:
       steps:
          - name: test code
            run: echo "Test code"
- deploy:
+  deploy:
   # this is github runner, each job runs on a runner
       runs-on: ubuntu-latest
       steps:
