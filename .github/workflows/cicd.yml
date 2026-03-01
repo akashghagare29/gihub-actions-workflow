@@ -1,0 +1,38 @@
+# This is workflow name
+name: Hello
+
+# runs on a trigger
+on:
+  workflow_dispatch:
+
+# these are jobs inside the workflow
+
+jobs:
+# this is the name of the job
+
+  code:
+  # this is github runner, each job runs on a runner
+      runs-on: ubuntu-latest
+      steps:
+         - name: checkout code
+           run: echo "Checkout code from Github"
+
+  build:
+  # this is github runner, each job runs on a runner
+      runs-on: ubuntu-latest
+      steps:
+         - name: build code
+           run: echo "Build code"
+
+  test:
+  # this is github runner, each job runs on a runner
+      runs-on: ubuntu-latest
+      steps:
+         - name: test code
+           run: echo "Test code"
+ deploy:
+  # this is github runner, each job runs on a runner
+      runs-on: ubuntu-latest
+      steps:
+         - name: deploy code
+           run: echo "Deploy code"        
