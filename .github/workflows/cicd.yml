@@ -18,6 +18,7 @@ jobs:
            run: echo "Checkout code from Github"
 
   build:
+     needs: [code]
   # this is github runner, each job runs on a runner
       runs-on: ubuntu-latest
       steps:
@@ -25,12 +26,14 @@ jobs:
            run: echo "Build code"
 
   test:
+      needs: [build]
   # this is github runner, each job runs on a runner
       runs-on: ubuntu-latest
       steps:
          - name: test code
            run: echo "Test code"
   deploy:
+      needs: [test]
   # this is github runner, each job runs on a runner
       runs-on: ubuntu-latest
       steps:
