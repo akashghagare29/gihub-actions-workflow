@@ -1,5 +1,5 @@
 # This is workflow name
-name: CICD
+name: CICD-new
 
 # runs on a trigger
 on:
