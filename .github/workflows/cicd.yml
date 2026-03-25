@@ -18,7 +18,7 @@ jobs:
            run: echo "Checkout code from Github"
 
   build:
-     needs: [code]
+      needs: [code]
   # this is github runner, each job runs on a runner
       runs-on: ubuntu-latest
       steps:
