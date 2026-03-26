@@ -1,6 +1,6 @@
 # This is workflow name
 
-name: Hello
+name: Trigger file based
 
 # runs on a trigger
 
@@ -14,7 +14,7 @@ on:
 jobs:
 # this is the name of the job
 
-  greet:
+  html:
   # this is github runner, each job runs on a runner
       runs-on: ubuntu-latest
       steps:
